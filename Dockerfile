@@ -1,6 +1,6 @@
 FROM frolvlad/alpine-glibc
 
-MAINTAINER yuya-oc
+LABEL maintainer="yuya-oc"
 
 ARG version="2018"
 
@@ -19,5 +19,3 @@ RUN apk add --no-cache perl wget tar xz binutils && \
 WORKDIR /workdir
 
 VOLUME ["/workdir"]
-
-CMD ["sh"]
