@@ -8,7 +8,7 @@
     "arch": "x86_64"
   },
   "2018": {
-    "repository": "ftp://tug.org/texlive/historic/2018",
+    "repository": "ftp://tug.org/texlive/historic/2018/tlnet-final",
     "arch": "x86_64-linuxmusl"
   }
 }
