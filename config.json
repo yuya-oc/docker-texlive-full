@@ -1,11 +1,11 @@
 {
   "2016": {
     "repository": "ftp://tug.org/texlive/historic/2016/tlnet-final",
-    "arch": "x86_64"
+    "arch": "x86_64-linux"
   },
   "2017": {
     "repository": "ftp://tug.org/texlive/historic/2017/tlnet-final",
-    "arch": "x86_64"
+    "arch": "x86_64-linux"
   },
   "2018": {
     "repository": "ftp://tug.org/texlive/historic/2018/tlnet-final",
