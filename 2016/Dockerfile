@@ -13,7 +13,3 @@ RUN apk add --no-cache perl wget tar xz binutils && \
     /tmp/install-tl-unx/install-tl -profile /tmp/install-tl-unx/profile -repository ftp://tug.org/texlive/historic/2016/tlnet-final && \
     apk del --no-cache perl wget tar xz binutils && \
     rm -rf /tmp/install-tl-unx
-
-WORKDIR /workdir
-
-VOLUME ["/workdir"]
