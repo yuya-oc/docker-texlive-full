@@ -2,7 +2,7 @@ FROM frolvlad/alpine-glibc
 
 LABEL maintainer="yuya-oc"
 
-ENV PATH /usr/local/texlive/%VERSION%/bin/%ARCH%:$PATH
+ENV PATH %TEXPATH%:$PATH
 
 RUN apk add --no-cache perl wget tar xz binutils && \
     mkdir -p /tmp/install-tl-unx && \

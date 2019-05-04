@@ -8,12 +8,12 @@ jq -r 'keys[]' "${CONFIG_JSON}" \
     do
       echo "Updating ${VERSION}"
       REPO="$(jq -r ".\"${VERSION}\".repository" "${CONFIG_JSON}")"
-      ARCH="$(jq -r ".\"${VERSION}\".arch" "${CONFIG_JSON}")"
+      TEXPATH="$(jq -r ".\"${VERSION}\".texPath" "${CONFIG_JSON}")"
       mkdir -p "${VERSION}"
       cat Dockerfile.template \
         | sed -e "s@%VERSION%@${VERSION}@g" \
         | sed -e "s@%REPOSITORY%@${REPO}@g" \
-        | sed -e "s@%ARCH%@${ARCH}@g" \
+        | sed -e "s@%TEXPATH%@${TEXPATH}@g" \
         > "${VERSION}/Dockerfile"
       cp docker-compose.test.yml "${VERSION}/"
     done

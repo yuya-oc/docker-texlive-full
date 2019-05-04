@@ -1,18 +1,18 @@
 {
   "2016": {
     "repository": "http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2016/tlnet-final",
-    "arch": "x86_64-linux"
+    "texPath": "/usr/local/texlive/2016/bin/x86_64-linux"
   },
   "2017": {
     "repository": "http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2017/tlnet-final",
-    "arch": "x86_64-linux"
+    "texPath": "/usr/local/texlive/2017/bin/x86_64-linux"
   },
   "2018": {
     "repository": "http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final",
-    "arch": "x86_64-linuxmusl"
+    "texPath": "/usr/local/texlive/2018/bin/x86_64-linuxmusl"
   },
   "latest": {
     "repository": "http://mirror.ctan.org/systems/texlive/tlnet",
-    "arch": "x86_64-linuxmusl"
+    "texPath": "/usr/local/texlive/2019/bin/x86_64-linuxmusl"
   }
 }
