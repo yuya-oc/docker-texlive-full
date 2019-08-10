@@ -9,10 +9,10 @@
   },
   "2018": {
     "repository": "http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final",
-    "texPath": "/usr/local/texlive/2018/bin/x86_64-linuxmusl"
+    "texPath": "/usr/local/texlive/2018/bin/x86_64-linux"
   },
   "latest": {
     "repository": "http://mirror.ctan.org/systems/texlive/tlnet",
-    "texPath": "/usr/local/texlive/2019/bin/x86_64-linuxmusl"
+    "texPath": "/usr/local/texlive/2019/bin/x86_64-linux"
   }
 }

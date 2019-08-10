@@ -10,5 +10,5 @@ RUN /tmp/install-tl-unx/install-tl -profile /tmp/install-tl-unx/profile -reposit
 
 FROM frolvlad/alpine-glibc:alpine-3.10
 LABEL maintainer="yuya-oc"
-ENV PATH /usr/local/texlive/2018/bin/x86_64-linuxmusl:$PATH
+ENV PATH /usr/local/texlive/2018/bin/x86_64-linux:$PATH
 COPY --from=install /usr/local/texlive /usr/local/texlive
