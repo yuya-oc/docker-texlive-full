@@ -1,6 +1,6 @@
 FROM frolvlad/alpine-glibc:alpine-3.10 AS install
 RUN apk add --no-cache perl wget tar xz binutils
-RUN rm -r /var/cache/apk/*
+RUN rm -rf /var/cache/apk/*
 RUN mkdir -p /tmp/install-tl-unx
 RUN wget -q %REPOSITORY%/install-tl-unx.tar.gz -O /tmp/install-tl-unx.tar.gz
 RUN tar zxvf /tmp/install-tl-unx.tar.gz -C /tmp/install-tl-unx --strip-components=1
