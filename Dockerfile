@@ -1,6 +1,5 @@
 FROM frolvlad/alpine-glibc:alpine-3.10 AS install
 RUN apk add --no-cache perl wget tar xz binutils
-RUN rm -rf /var/cache/apk/*
 RUN mkdir -p /tmp/install-tl-unx
 RUN wget -q http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/install-tl-unx.tar.gz -O /tmp/install-tl-unx.tar.gz
 RUN tar zxvf /tmp/install-tl-unx.tar.gz -C /tmp/install-tl-unx --strip-components=1
