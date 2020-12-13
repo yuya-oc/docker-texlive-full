@@ -8,9 +8,13 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        version: [2016, 2017, 2018, latest]
+
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build latest --tag texlive-full:latest
+      run: docker build ${{ matrix.version }} --tag texlive-full:${{ matrix.version }}
     - name: Execute TeX
-      run: docker run texlive-full:latest tex -version
+      run: docker run texlive-full:${{ matrix.version }} tex -version
